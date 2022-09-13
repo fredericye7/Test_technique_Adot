@@ -1,0 +1,144 @@
+/* As asked the page are entirely flexible with width and heigth in % */
+
+/* Set the page with % */
+
+html {
+    height: 100%;
+}
+
+/* Set the body with % */
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/* Header represent 15% of the page, logo should be in center and background black */
+header {
+    display: flex;
+    justify-content: center;
+    background: black;
+    height: 15%;
+}
+
+/* Nothing to say for the footer */
+footer {}
+
+/* All the class used for the page */
+
+/* Class for the logo. Should start a bit more to the right because logo isn't symmetric. */
+.logo {
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 35%;
+    height: 60%;
+}
+
+/* Class for the main container that represent body without header so (100 - 15) 75% of the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+/* Class for the video block that show the pub. Take all space available given by container. Content should be in center, the video and button should be in equal distance on the page.*/
+.videoblock {
+    display: flex;
+    height: 100%;
+    background-color: black;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+/* Class for the skip button. Size of the button are scalable with the width and height of the screen. Same for the font-size. */
+.skipbutton {
+    background-color: #cbb081;
+    border: #cbb081;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vw;
+    letter-spacing: .025rem;
+    width: 29vw;
+    height: 14vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Class for the promotion page with the product. Take all space available given by container */
+.imageblock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Class for the image that represent the product should represent the majority of the screen */
+.productimageblock {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+/* The image should take all the space given by the imageproductblock */
+.productimage {
+    height: 100%;
+}
+
+/* Class used for the streamer in the bottom of the page. Represent only 15% of the screen */
+.banderole {
+    display: flex;
+    flex-direction: row;
+    background-color: #cbb081;
+    justify-content: space-evenly;
+    height: 15%;
+
+}
+
+/* Class used as font style for the promotion text */
+.banderole b {
+    align-self: center;
+    letter-spacing: .025rem;
+    font-size: 6vw;
+    color: white;
+}
+
+/* Class for the promot button. Size of the button are scalable with the width and height of the screen. Same for the font-size. */
+.promobutton {
+    background-color: black;
+    border: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vw;
+    letter-spacing: .025rem;
+    width: 29vw;
+    height: 14vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Block that contain the map to the shop where there's the promotion */
+.mapblock {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Class used for the bottom streamer under the map. */
+.mapaddress {
+    display: flex;
+    height: 40%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Font color for the address */
+.mapaddress b {
+    color: #cbb081;
+    font-size: 4vw;
+}
